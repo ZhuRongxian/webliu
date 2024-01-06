@@ -1,0 +1,68 @@
+body {
+  min-width: 1440px;
+}
+.contactUs {
+  width: 100%;
+}
+.contactUs .contactUs_wrap {
+  margin: 55px auto 80px;
+}
+.contactUs .contactUs_wrap h3 {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 80px;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 36px;
+  text-align: center;
+}
+.contactUs .contactUs_wrap h3 .xian {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  width: 80px;
+  height: 3px;
+  background-color: #000;
+}
+.contactUs .contactUs_wrap .icon_list {
+  display: flex;
+}
+.contactUs .contactUs_wrap .icon_list li {
+  cursor: pointer;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contactUs .contactUs_wrap .icon_list li .icon {
+  width: 120px;
+  margin-bottom: 15px;
+}
+.contactUs .contactUs_wrap .icon_list li .icon img {
+  transition: all 1s ease;
+  width: 100%;
+}
+.contactUs .contactUs_wrap .icon_list li .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  text-align: center;
+  line-height: 1.5;
+}
+.contactUs .contactUs_wrap .icon_list li:hover .icon img {
+  transform: rotateY(360deg);
+}
+.contactUs .contactUs_wrap h4 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.contactUs .contactUs_wrap .location {
+  cursor: pointer;
+  width: 100%;
+}
+.contactUs .contactUs_wrap .location img {
+  width: 100%;
+}

@@ -1,0 +1,211 @@
+body {
+  min-width: 1440px;
+}
+.productCenter {
+  width: 100%;
+}
+.productCenter .productCenter_wrap {
+  margin: 55px auto 80px;
+}
+.productCenter .productCenter_wrap h3 {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 36px;
+  text-align: center;
+}
+.productCenter .productCenter_wrap h3 .xian {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  width: 80px;
+  height: 3px;
+  background-color: #000;
+}
+.productCenter .productCenter_wrap .product_select {
+  height: 50px;
+  border: solid 2px #7d7d7d;
+}
+.productCenter .productCenter_wrap .product_select .product_select_wrap {
+  height: 100%;
+  width: 660px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.productCenter .productCenter_wrap .product_select .product_select_wrap li {
+  cursor: pointer;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productCenter .productCenter_wrap .product_select .product_select_wrap li:hover {
+  background-color: #e5e5e5;
+}
+.productCenter .productCenter_wrap .product_select .product_select_wrap .active {
+  background-color: #e5e5e5;
+}
+.productCenter .productCenter_wrap .product_content {
+  position: relative;
+  overflow: hidden;
+}
+.productCenter .productCenter_wrap .product_content .product_list {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productCenter .productCenter_wrap .product_content .product_list li {
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+.productCenter .productCenter_wrap .product_content .product_list li .cover {
+  width: 448px;
+  height: 448px;
+}
+.productCenter .productCenter_wrap .product_content .product_list li .cover img {
+  width: 100%;
+  height: 100%;
+}
+.productCenter .productCenter_wrap .product_content .product_list li .info {
+  margin-top: 24px;
+  text-align: center;
+}
+.productCenter .productCenter_wrap .product_content .product_list li .info h4 {
+  font-size: 18px;
+  color: #666666;
+}
+.productCenter .productCenter_wrap .product_content .product_list li .info p {
+  font-size: 18px;
+  color: #000000;
+  margin-top: 11px;
+}
+.productCenter .productCenter_wrap .product_content .product_list li .info .buy {
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  margin: 13px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #666;
+  font-size: 18px;
+  color: #666;
+}
+.productCenter .productCenter_wrap .page {
+  display: flex;
+  justify-content: center;
+}
+.productCenter .productCenter_wrap .page li {
+  cursor: pointer;
+  font-size: 22px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+.productCenter .productCenter_wrap .page li:first-child {
+  margin-right: 60px;
+  width: 100px;
+}
+.productCenter .productCenter_wrap .page li:last-child {
+  margin-left: 60px;
+  width: 100px;
+}
+.mini_productCenter {
+  display: none;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.mini_productCenter h3 {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-family: MicrosoftYaHei;
+  color: #000;
+}
+.mini_productCenter .mini_productCenter_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.mini_productCenter .mini_productCenter_wrap > li .cate {
+  width: 120px;
+  height: 26px;
+  border: solid 1px #aaaaaa;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list {
+  display: flex;
+  justify-content: space-between;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list li {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list li .cover {
+  width: 100%;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list li .cover img {
+  width: 100%;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list li .info {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list li .info h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: #666666;
+  font-size: 12px;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list li .info p {
+  text-align: center;
+  font-size: 12px;
+  color: #000;
+}
+.mini_productCenter .mini_productCenter_wrap > li .product_list li .button {
+  margin: 6px auto 0;
+  cursor: pointer;
+  width: 60px;
+  height: 22px;
+  border: solid 1px #707070;
+  color: #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.mini_productCenter .mini_productCenter_wrap > li .more_button {
+  cursor: pointer;
+  margin: 20px auto 0;
+  width: 90px;
+  height: 26px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: solid 1px #707070;
+  color: #707070;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.mini_productCenter .mini_productCenter_wrap > li:first-child .cate {
+  margin-top: 0;
+}

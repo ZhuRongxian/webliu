@@ -1,0 +1,220 @@
+.shopping {
+  width: 100%;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+}
+.shopping .header {
+  height: 62px;
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #fff;
+  display: flex;
+}
+.shopping .header p {
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 62px;
+  margin: 0 20px;
+}
+.shopping .header p:nth-of-type(1) {
+  margin-left: 40px;
+  color: red;
+  border-bottom: 4px solid red;
+}
+.shopping .title {
+  width: 78%;
+  height: 62px;
+  margin: 0 auto;
+  margin-top: 12px;
+  background-color: #fff;
+  padding: 0 2%;
+}
+.shopping .title > ul {
+  display: flex;
+}
+.shopping .title > ul li {
+  line-height: 62px;
+}
+.shopping .title > ul li:nth-of-type(1) {
+  flex-basis: 48%;
+}
+.shopping .title > ul li:nth-of-type(2) {
+  flex-basis: 20%;
+}
+.shopping .title > ul li:nth-of-type(3) {
+  flex-basis: 14%;
+}
+.shopping .title > ul li:nth-of-type(4) {
+  flex-basis: 11%;
+}
+.shopping .list {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 12px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.shopping .list ul {
+  height: 100%;
+  display: flex;
+}
+.shopping .list ul li:nth-of-type(1) {
+  flex-basis: 0%;
+}
+.shopping .list ul li:nth-of-type(1) input {
+  width: 20px;
+  height: 20px;
+  color: rgba(0, 0, 0, 0.54);
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 55px;
+  cursor: pointer;
+}
+.shopping .list ul li:nth-of-type(2) {
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopping .list ul li:nth-of-type(2) img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  cursor: pointer;
+}
+.shopping .list ul li:nth-of-type(3) {
+  flex-basis: 42%;
+}
+.shopping .list ul li:nth-of-type(3) span {
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+  color: #343a40;
+  margin-top: 40px;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.shopping .list ul li:nth-of-type(4) {
+  flex-basis: 15%;
+}
+.shopping .list ul li:nth-of-type(4) span {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 40px;
+}
+.shopping .list ul li:nth-of-type(5) {
+  flex-basis: 13%;
+}
+.shopping .list ul li:nth-of-type(5) p:nth-of-type(1) {
+  margin-top: 34px;
+}
+.shopping .list ul li:nth-of-type(5) p:nth-of-type(1) input {
+  width: 24px;
+  height: 24px;
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.shopping .list ul li:nth-of-type(5) p:nth-of-type(1) span {
+  margin: 0 10px;
+}
+.shopping .list ul li:nth-of-type(5) p:nth-of-type(2) {
+  font-size: 14px;
+  color: #343a40;
+  opacity: 0.5;
+  margin-top: 4px;
+  padding-left: 12px;
+}
+.shopping .list ul li:nth-of-type(6) {
+  flex-basis: 10.6%;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 40px;
+}
+.shopping .list ul li:nth-of-type(7) span {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.shopping .list ul li:nth-of-type(7) span:nth-of-type(1) {
+  margin-top: 30px;
+}
+.shopping .bottom {
+  margin-top: 30px;
+  width: 100%;
+  height: 110px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+
+}
+.shopping .bottom > ul {
+  width: 82%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 46px;
+}
+.shopping .bottom > ul li:nth-of-type(1) {
+  flex-basis: 70%;
+  display: flex;
+}
+.shopping .bottom > ul li:nth-of-type(1) input {
+  width: 20px;
+  height: 20px;
+  color: rgba(0, 0, 0, 0.54);
+  outline: none;
+  display: block;
+  cursor: pointer;
+  margin-right: 16px;
+}
+.shopping .bottom > ul li:nth-of-type(1) span {
+  color: #333;
+  opacity: 0.7;
+  font-size: 16px;
+}
+.shopping .bottom > ul li:nth-of-type(2) {
+  font-size: 16px;
+  color: #343a40;
+  margin-top: -6px;
+}
+.shopping .bottom > ul li:nth-of-type(2) span {
+  font-size: 28px;
+  color: #f34141;
+}
+.shopping .bottom > ul li:nth-of-type(3) div {
+  width: 156px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #eee;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  overflow: hidden;
+  margin-top: -14px;
+  cursor: pointer;
+}
+.buy{
+  transition: all .3s ease;
+}
+.buy:hover {
+  color: #fff !important;
+  background-color: #f34141 !important;
+}
+
+.price{
+  color: red;
+}

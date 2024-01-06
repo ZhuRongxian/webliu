@@ -1,0 +1,64 @@
+body {
+  min-width: 1440px;
+}
+.aboutUs {
+  width: 100%;
+}
+.aboutUs .aboutUs_wrap {
+  margin: 55px auto 80px;
+}
+.aboutUs .aboutUs_wrap h3 {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 80px;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 36px;
+  text-align: center;
+}
+.aboutUs .aboutUs_wrap h3 .xian {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  width: 80px;
+  height: 3px;
+  background-color: #000;
+}
+.aboutUs .aboutUs_wrap .about_banner {
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.aboutUs .aboutUs_wrap .about_banner img {
+  width: 100%;
+}
+.aboutUs .aboutUs_wrap p {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: MicrosoftYaHeiLight;
+  color: #666666;
+  line-height: 1.5;
+  text-indent: 2em;
+}
+.aboutUs .aboutUs_wrap h4 {
+  cursor: pointer;
+  margin-top: 80px;
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.aboutUs .aboutUs_wrap .more_button {
+  display: none;
+  cursor: pointer;
+  margin: 20px auto 0;
+  width: 90px;
+  height: 26px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: solid 1px #707070;
+  font-size: 14px;
+  color: #707070;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}

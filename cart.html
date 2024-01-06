@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автомобиль</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="element/elementUI.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="header_wrap w">
+          <div>
+            <h1 class="logo">
+              <a href="index.html">
+                <img src="img/logo.png" alt="" />
+              </a>
+            </h1>
+            <ul class="nav">
+              <li><a href="index.html">Введение</a></li>
+              <li>
+                <a href="newNews.html">Новый</a>
+                <ul class="select">
+                  <li><a href="#">новинки осени</a></li>
+                  <li><a href="#">новые зимние товары</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="productCenter.html">Товар</a>
+                <ul class="select">
+                  <li><a href="#">кружка</a></li>
+                  <li><a href="#">чаша</a></li>
+                  <li><a href="#">блюдо</a></li>
+                  <li><a href="#">украшения</a></li>
+                </ul>
+              </li>
+              <li><a href="contactUs.html">Соединять</a></li>
+              <li>
+                <a href="aboutUs.html">о нас</a>
+                <ul class="select">
+                  <li><a href="#">история бренда</a></li>
+                  <li><a href="#">Задумать</a></li>
+                  <li><a href="#">Вдохновлен</a></li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="cart.html">Автомобиль</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lau">
+            <a href="#">中文</a>
+            <span></span>
+            <a href="#">Руский</a>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="swiper banner_swiper">
+          <div class="swiper-wrapper" id="banner_swiper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/banner1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/banner2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/banner3.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="shopping">
+        <div
+          class="header"
+          style="display: flex; justify-content: space-between"
+        >
+          <p>Все товары</p>
+        </div>
+        <div class="title">
+          <ul>
+            <li>Информация о товарах</li>
+            <li>Стоимость единицы</li>
+            <li>Количество</li>
+            <li>Итого</li>
+            <li>Операция</li>
+          </ul>
+        </div>
+        <template v-if="cartList.length">
+          <div
+            class="list"
+            ref="lists"
+            v-for="(item, index) in cartList"
+            :key="item.id"
+          >
+            <ul>
+              <li></li>
+              <li>
+                <img :src="item.img" alt="" />
+              </li>
+              <li>
+                <span>{{ item.name }}</span>
+              </li>
+              <li class="price">
+                <span>￥{{ item.price }}</span>
+              </li>
+              <li>
+                <p>
+                  <input type="button" value="-" @click="numremove(item)" />
+                  <span>{{ item.num }}</span>
+                  <input type="button" value="+" @click="numadd(item)" />
+                </p>
+              </li>
+              <li class="price">￥{{ item.num * item.price }}</li>
+              <li @click="deleteItem(item)">
+                <span>Удалить товар</span>
+              </li>
+            </ul>
+          </div>
+        </template>
+        <template v-else>
+          <el-empty description="Шопинг пуст." />
+        </template>
+
+        <div class="bottom">
+          <ul>
+            <li></li>
+            <li>Всего<span>￥{{ allprice }}</span></li>
+            <li>
+              <div class="buy" @click="pay">
+                Выйти на расчет (<span>￥{{ allprice }}</span>)
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_wrap">
+          <ul class="left_fo">
+            <li>центр обслуживания клиентов</li>
+            <li>9816894694</li>
+            <li>каждый день 10；00-22；00</li>
+          </ul>
+          <ul class="center_fo">
+            <li><a href="#">обслуживание клиентов</a></li>
+            <li><a href="#">контактные данные</a></li>
+            <li><a href="#">Распределение товаров</a></li>
+            <li><a href="#">отозвать продукт</a></li>
+          </ul>
+          <ul class="right_fo">
+            <li><a href="#">Sunday</a></li>
+            <li><a href="#">условия использования</a></li>
+
+            <li><a href="#">О нас</a></li>
+
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 右侧导航 -->
+      <ul class="right_nav">
+        <li>
+          <div class="iconBox oln_ser">
+            <img src="img/rnqq.png" />
+            <h4>Онлайн-запрос</h4>
+          </div>
+          <div class="hideBox">
+            <div class="hb">
+              <h5>На Vk</h5>
+              <div class="qqtalk">
+                <a
+                  target="_blank"
+                  href="http://wpa.qq.com/msgrd?v=3&uin=88888888&site=qq&menu=yes"
+                >
+                  <span
+                    ><img src="img/online.png" alt="пишет" title="пишет"
+                  /></span>
+                  <p>пишет</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="iconBox phe_num">
+            <img src="img/rncall.png" />
+            <h4>телефоны</h4>
+          </div>
+          <div class="hideBox">
+            <div class="hb">
+              <h5>Номер</h5>
+              <p>+79816894694</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="iconBox">
+            <img src="img/rnphone.png" />
+            <h4>Мобильный сайт</h4>
+          </div>
+          <div class="hideBox">
+            <div class="hb">
+              <h5>QR Код</h5>
+              <img src="img/icon3.jpg" />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="iconBox to_msg">
+            <img src="img/rnmsg.png" />
+            <h4>оставить сообщение</h4>
+          </div>
+        </li>
+        <li>
+          <div class="iconBox top">
+            <img src="img/rntop.png" />
+            <h4>Вернуться к началу</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="js/vue.js"></script>
+  <script src="element/element.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/public.js"></script>
+</html>
